@@ -6,7 +6,7 @@ resource "aws_acm_certificate" "cert" {
     Name=var.team_name
     Email=var.email
   }
-
+     
   lifecycle {
     create_before_destroy = true
   }
